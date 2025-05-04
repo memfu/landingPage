@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+body {
+    background-color: #3AAFB9;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+
+section {
+    position: relative;
+    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
+    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(9,58,62);
+    border-radius: 5px;
+    padding: 0 10 px;
+    font-family: Quicksand;
+    font-weight: 600;
+}
+
+header .logo:hover{
+    color: rgb(9,58,62);
+    background: white;
+    transition: 1s;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(9,58,62);
+    padding: 2px;
+}
+
+/*Contenido de la web*/
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenido .tituloBox h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contenido .tituloBox h2 span {
+    background: rgb(9,58,62);
+    color: white;
+    padding: 0 10 px;
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(9,58,62);
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover{
+    color: white;
+    background: rgb(9,58,62);
+    transition: 0.5s;
+}
+
+.contenido .imgBox{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5; /*Para ponerlo por detrás del texto*/
+}
+
+.contenido .imgBox img {
+    height: 50vh;
+}
+
+.contenido .imgBox img:hover{
+    height: 50vh;
+}
+
+/*Copyright*/
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/*Redes sociales*/
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30 px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: white;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a{
+    color: rgb(9,58,62);
+}
+
+/*******************************/
+/*Círculo*/
+.circulo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(rgb(4, 98, 98), green, blue, alpha);
+    clip-path: circle(650px at right800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+
+/*Tipografías*/
+@font-face {
+    /*Títulos*/
+    font-family: Quicksand;
+    src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
+    /*Resto de texto*/
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
