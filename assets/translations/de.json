@@ -7,13 +7,15 @@
         "projects": "Projekte",
         "contact": "Kontakt",
         "cv": "Lebenslauf"
-      }
+      },
+      "footer": "© Persönliche Website erstellt für das DAM-Fach 'Lenguaje de Marcas'"
     },
     "home": {
       "welcome": "Hallo, ich bin María Eugenia",
       "title": "Entwicklerin für plattformübergreifende Anwendungen",
       "subtitle": "QA Softwaretesterin / Testmanagerin",
-      "description": "QA-Testerin mit technischem Background, trilingual und lösungsorientiert – ich optimiere Prozesse und teste mit System."
+      "description": "QA-Testerin mit technischem Background, trilingual und lösungsorientiert – ich optimiere Prozesse und teste mit System.",
+      "moreAboutMe": "Mehr über mich"
     },
     "projects": {},
     "contact": {

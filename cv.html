@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/i18next@22.4.7/i18next.min.js"></script>
+    <script src="./assets/js/i18.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Curriculum Vitar</title>
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" data-i18n="common.nav.home"></a>
+                </li>
+                <li>
+                    <a href="projects.html" data-i18n="common.nav.projects"></a>
+                </li>
+                <li>
+                    <a href="cv.html" data-i18n="common.nav.cv"></a>
+                </li>
+                <li>
+                    <a href="contact.html" data-i18n="common.nav.contact"></a>
+                </li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="loadLanguage('es')">ES</button>
+                <button onclick="loadLanguage('en')">EN</button>
+                <button onclick="loadLanguage('de')">DE</button>
+            </div>
+        </header>
+        <main class="cv-container">
+            <h1 data-i18n="cv.title"></h1>
+            <a id="cv-download" class="download-btn" data-i18n="cv.download" target="_blank"></a>
+
+            <section class="education-section">
+            <h2 data-i18n="cv.education"></h2>
+            <ul id="education-list"></ul>
+            </section>
+
+            <section class="experience-section">
+            <h2 data-i18n="cv.experience"></h2>
+            <ul id="experience-list"></ul>
+            </section>
+        </main>
+        <div class="copyright">
+            <p data-i18n="common.footer"></p>
+        </div>
+        <ul class="redesSociales">
+            <!-- <li>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li> -->
+            <li>
+                <a href="https://www.linkedin.com/in/memfuentes/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/memfu" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

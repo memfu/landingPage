@@ -7,6 +7,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/i18next@22.4.7/i18next.min.js"></script>
+    <script src="./assets/js/i18.js"></script>
+    <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>María Eugenia Martín Fuentes</title>
 </head>
@@ -17,47 +19,52 @@
             <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
             <ul class="navbar">
                 <li>
-                    <a href="#">Quién soy</a>
+                    <a href="index.html" data-i18n="common.nav.home"></a>
                 </li>
                 <li>
-                    <a href="#">CV</a>
+                    <a href="projects.html" data-i18n="common.nav.projects"></a>
                 </li>
                 <li>
-                    <a href="#">Proyectos destacados</a>
+                    <a href="cv.html" data-i18n="common.nav.cv"></a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="contact.html" data-i18n="common.nav.contact"></a>
                 </li>
             </ul>
+            <div class="lang-buttons">
+                <button onclick="loadLanguage('es')">ES</button>
+                <button onclick="loadLanguage('en')">EN</button>
+                <button onclick="loadLanguage('de')">DE</button>
+            </div>
         </header>
         <div class="contenido">
             <div class="tituloBox">
-                <h2>Desarrolladora de aplicaciones multiplataforma</h2>
-                <h2><span>QA Software Tester / Testmanager</span></h2>
-                <p class="frase">Desarrolladora trilingüe con experiencia en QA Manual Testing</p>
-                <p class="frase">Entusiasta de la optimización y del continuo mejoramiento de procesos</p>
-                <a href="#">Más sobre mí</a>
+                <h2 data-i18n="home.welcome"></h2>
+                <h2 data-i18n="home.title"><span></span></h2>
+                <p data-i18n="home.subtitle" class="frase"></p>
+                <p data-i18n="home.description" class="frase"></p>
+                <a href="cv.html" data-i18n="home.moreAboutMe"></a>
             </div>
             <div class="imgBox">
                 <img src="./assets/img/avatar_memf.png" alt="MEMF">
             </div>
         </div>
         <div class="copyright">
-            <p>&copy;Web personal creada para la materia de Lenguaje de Marcas de DAM</p>
+            <p data-i18n="common.footer"></p>
         </div>
         <ul class="redesSociales">
-            <li>
+            <!-- <li>
                 <a href="#">
                     <ion-icon name="mail-outline"></ion-icon>
                 </a>
-            </li>
+            </li> -->
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/memfuentes/" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://github.com/memfu" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
             </li>

@@ -7,13 +7,15 @@
         "projects": "Proyectos",
         "contact": "Contacto",
         "cv": "CV"
-      }
+      },
+      "footer": "© Web personal creada para la materia de Lenguaje de Marcas de DAM"
     },
     "home": {
       "welcome": "Hola, soy María Eugenia",
       "title": "Desarrolladora de aplicaciones multiplataforma",
       "subtitle": "QA Software Tester / Testmanager",
-      "description": "Tester QA con formación técnica, trilingüe y orientada a soluciones: optimizo procesos y realizo pruebas con método."
+      "description": "Tester QA con formación técnica, trilingüe y orientada a soluciones: optimizo procesos y realizo pruebas con método.",
+      "moreAboutMe": "Más sobre mí"
     },
     "projects": {
       "title": "Proyectos",

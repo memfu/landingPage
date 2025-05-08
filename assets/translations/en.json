@@ -7,13 +7,15 @@
         "projects": "Projects",
         "contact": "Contact",
         "cv": "Resume"
-      }
+      },
+      "footer": "© Personal website created for the DAM subject 'Lenguaje de Marcas'"
     },
     "home": {
       "welcome": "Hi, I'm María Eugenia",
       "title": "Cross-platform application developer",
       "subtitle": "QA Software Tester / Test Manager",
-      "description": "QA tester with a technical background, trilingual and solution-oriented – I optimize processes and test with purpose."
+      "description": "QA tester with a technical background, trilingual and solution-oriented – I optimize processes and test with purpose.",
+      "moreAboutMe": "More about me"
     },
     "projects": {},
     "contact": {
