@@ -1,0 +1,105 @@
+{
+    "common": {
+      "language": "Sprache",
+      "selectLanguage": "Sprache auswählen",
+      "nav": {
+        "home": "Startseite",
+        "projects": "Projekte",
+        "contact": "Kontakt",
+        "cv": "Lebenslauf"
+      }
+    },
+    "home": {
+      "welcome": "Hallo, ich bin María Eugenia",
+      "title": "Entwicklerin für plattformübergreifende Anwendungen",
+      "subtitle": "QA Softwaretesterin / Testmanagerin",
+      "description": "QA-Testerin mit technischem Background, trilingual und lösungsorientiert – ich optimiere Prozesse und teste mit System."
+    },
+    "projects": {},
+    "contact": {
+      "title": "Kontaktiere mich",
+      "description": "Möchtest du mit mir arbeiten oder hast du eine Frage? Schreib mir eine Nachricht.",
+      "form": {
+        "name": "Vorname",
+        "surname": "Nachname",
+        "company": "Firma",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "submit": "Senden"
+      },
+      "success": "Danke! Ich melde mich bald bei dir."
+    },
+    "cv": {
+      "title": "Lebenslauf",
+      "download": "PDF herunterladen",
+      "education": "Ausbildung",
+      "educationList": [
+        {
+          "degree": "Diplom Übersetzung und Dolmetschen (ES/EN/DE)",
+          "institution": "Universität Murcia (Spanien)",
+          "years": "2005 - 2010"
+        },
+        {
+          "degree": "Binationaler Master in Deutsch als Fremdsprache",
+          "institution": "Universität Salamanca (Spanien) und Universität Leipzig (Deutschland)",
+          "years": "2010 - 2012"
+        },
+        {
+          "degree": "Duales Studium Betriebswirtschaft",
+          "institution": "Internationale Berufsakademie Leipzig (Deutschland)",
+          "years": "2016 - 2019"
+        },
+        {
+          "degree": "Berufsausbildung in der Entwicklung plattformübergreifender Anwendungen",
+          "institution": "Universidad Internacional de la Rioja (UNIR) (Spanien)",
+          "years": "2022 - heute"
+        }
+      ],
+      "experience": "Berufserfahrung",
+      "experienceList": [
+        {
+          "position": "Dev-QA / Softwaretesterin",
+          "company": "mgm technology partners GmbH",
+          "location": "Leipzig, Deutschland",
+          "years": "2021 - 2024",
+          "description": "Verantwortlich für manuelles und automatisiertes Testen, Fehlerverfolgung, Erstellung von Testfällen und Kundenkommunikation. Eingesetzte Tools: JIRA, TestRail, QF-Test, Jenkins, TortoiseGit."
+        },
+        {
+          "position": "HR Consultant / Sales Manager",
+          "company": "Truffls GmbH",
+          "location": "Berlin, Deutschland",
+          "years": "2019 - 2020",
+          "description": "Vertrieb und Kundenbetreuung mit Schwerpunkt auf Startups und KMUs. Verwendung von Salesforce, Durchführung von Workshops und Schulung neuer Mitarbeiter."
+        },
+        {
+          "position": "Duale Studentin im Personalbereich",
+          "company": "Volkswagen Automobile Leipzig GmbH",
+          "location": "Leipzig, Deutschland",
+          "years": "2016 - 2019",
+          "description": "Planung von Veranstaltungen, Bewerbermanagement und Prozessoptimierung. Entwicklung von Tools zur Bewerberauswertung und Wissensmanagement."
+        },
+        {
+          "position": "Freiberufliche Übersetzerin",
+          "company": "Amazon Core S.à.r.l.",
+          "location": "Leipzig, Deutschland",
+          "years": "2014 - 2019",
+          "description": "Übersetzung und Post-Editing von Texten aus dem Englischen und Deutschen ins Spanische in über 60 Projekten."
+        },
+        {
+          "position": "Market Expansion Consultant, Übersetzerin und Kundenbetreuerin",
+          "company": "InterCultural Elements GmbH & Co.",
+          "location": "Leipzig, Deutschland",
+          "years": "2014 - 2016",
+          "description": "Internationale Expansion im E-Commerce und mehrsprachiger Kundenservice. Bearbeitung von ca. 20 Rücksendungen täglich."
+        },
+        {
+          "position": "Multilinguale Kundenbetreuerin",
+          "company": "Wirecard Communication Services GmbH",
+          "location": "Leipzig, Deutschland",
+          "years": "2013 - 2014",
+          "description": "Kundenservice in mehreren Sprachen."
+        }
+      ]
+    }
+  }
+  

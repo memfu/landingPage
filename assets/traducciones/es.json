@@ -1,0 +1,133 @@
+{
+    "common": {
+      "language": "Idioma",
+      "selectLanguage": "Seleccionar idioma",
+      "nav": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "cv": "CV"
+      }
+    },
+    "home": {
+      "welcome": "Hola, soy María Eugenia",
+      "title": "Desarrolladora de aplicaciones multiplataforma",
+      "subtitle": "QA Software Tester / Testmanager",
+      "description": "Tester QA con formación técnica, trilingüe y orientada a soluciones: optimizo procesos y realizo pruebas con método."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "description": "Estos son algunos de los proyectos en los que he trabajado.",
+      "project1": {
+        "name": "Web Corporativa de Breaking Bad",
+        "desc": "Página web con tabla y formulario.",
+        "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
+      },
+      "project2": {
+        "name": "Calculadora de salario",
+        "desc": "Una app de Android que calcula el salario neto según distintos factores usando Retrofit.",
+        "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
+      },
+      "project3": {
+        "name": "Buscador de películas",
+        "desc": "Una app de Android para filtrar películas usando API.",
+        "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
+      },
+      "project4": {
+        "name": "Programa para gestionar cursos para madres primerizas",
+        "desc": "Una app para gestionar una base de datos mediante JPA.",
+        "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
+      },
+      "project5": {
+        "name": "Programa para gestionar librerías",
+        "desc": "Una app para gestionar una base de datos con SpringBoot.",
+        "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
+      }
+    },
+    "contact": {
+      "title": "Contáctame",
+      "description": "¿Quieres trabajar conmigo o tienes una pregunta? Envíame un mensaje.",
+      "form": {
+        "name": "Nombre",
+        "surname": "Apellidos",
+        "company": "Empresa",
+        "email": "Correo electrónico",
+        "message": "Mensaje",
+        "submit": "Enviar"
+      },
+      "success": "¡Gracias! Te responderé pronto."
+    },
+    "cv": {
+      "title": "Currículum",
+      "download": "Descargar PDF",
+      "education": "Formación académica",
+      "educationList": [
+        {
+            "degree":"Licenciatura de Traducción e Interpretación (Español, Inglés, Alemán)",
+            "institution": "Universidad de Murcia (España)",
+            "years": "2005 - 2010"
+        },
+        {
+            "degree":"Master Binacional en Enseñanza de Alemán como Lengua Extranjera",
+            "institution": "Universidad de Salamanca (España) y Universität Leipzig (Alemania)",
+            "years": "2010 - 2012"
+        },
+        {
+            "degree":"Grado dual en Administración de Empresas",
+            "institution": "internationale Berufsakademie Leipzig (Alemania)",
+            "years": "2016 - 2019"
+        },
+        {
+            "degree":"Ciclo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+            "institution": "Universidad Internacional de la Rioja (UNIR)(España)",
+            "years": "2022 - Actualidad"
+        }
+      ],
+      "experience": "Experiencia profesional",
+      "experienceList": [
+        {
+            "position": "Dev-QA / Softwaretester",
+            "company": "mgm technology partners GmbH",
+            "location": "Leipzig, Alemania",
+            "years": "2021 - 2024",
+            "description": "Responsable de pruebas manuales y automatizadas, diseño y gestión de más de 1.000 casos de prueba, seguimiento de errores con JIRA, creación de consultas SQL para pruebas basadas en datos, automatización de UI con QF-Test e integración continua con Jenkins."
+        },
+        {
+            "position": "HR Consultant / Sales Manager",
+            "company": "Truffls GmbH",
+            "location": "Berlín, Alemania",
+            "years": "2019 - 2020",
+            "description": "Gestión de ventas y atención a clientes, con enfoque en startups y PYMES. Generación de ofertas con Salesforce, coordinación de workshops individuales semanales y soporte a la formación de nuevos empleados."
+        },
+        {
+            "position": "Estudiante de grado dual en el departamento de Recursos Humanos",
+            "company": "Volkswagen Automobile Leipzig GmbH",
+            "location": "Leipzig, Alemania",
+            "years": "2016 - 2019",
+            "description": "Gestión de candidatos y eventos, optimización de procesos con herramientas propias para selección de personal, certificación AEVO como formadora y desarrollo de la base del sistema de gestión del conocimiento."
+        },
+        {
+            "position": "Traductora autónoma",
+            "company": "Amazon Core S.à.r.l.",
+            "location": "Leipzig, Alemania",
+            "years": "2014 - 2019",
+            "description": "Traducción y post-edición de contenidos del inglés y alemán al español en más de 60 proyectos para diferentes líneas de productos."
+        },
+        {
+            "position": "Multilingual Market Expansion Consultant, Traductora y Att. al cliente",
+            "company": "InterCultural Elements GmbH & Co.",
+            "location": "Leipzig, Alemania",
+            "years": "2014 - 2016",
+            "description": "Apoyo a la expansión internacional de ventas en e-commerce, atención al cliente en tres idiomas y gestión diaria de devoluciones."
+        },
+        {
+            "position": "Att. al cliente multilingual",
+            "company": "Wirecard Communication Services GmbH",
+            "location": "Leipzig, Alemania",
+            "years": "2013 - 2014",
+            "description": "Atención al cliente en varios idiomas para servicios financieros y resolución de consultas internacionales."
+        }
+    ]
+    }
+}
+  
