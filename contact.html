@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/i18next@22.4.7/i18next.min.js"></script>
+    <script src="./assets/js/i18.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title data-i18n="common.nav.contact"></title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" data-i18n="common.nav.home"></a>
+                </li>
+                <li>
+                    <a href="projects.html" data-i18n="common.nav.projects"></a>
+                </li>
+                <li>
+                    <a href="cv.html" data-i18n="common.nav.cv"></a>
+                </li>
+                <li>
+                    <a href="contact.html" data-i18n="common.nav.contact"></a>
+                </li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="loadLanguage('es')">ES</button>
+                <button onclick="loadLanguage('en')">EN</button>
+                <button onclick="loadLanguage('de')">DE</button>
+            </div>
+        </header>
+        <main class="contenidoContact">
+            <div class="tituloBlanco">
+                <h2 data-i18n="contact.title"></h2>
+            </div>
+            <section class="contact-section" id="contact">
+                <h3 data-i18n="contact.description"></h3>
+                <form action="mailto:me.martinfuentes@gmail.com" method="post">
+                    <fieldset>
+                        <legend>Datos personales:</legend>
+                        <label data-i18n="contact.form.name" for="name"></label>
+                        <input type="text" name="name" id="name" required>
+                        <label data-i18n="contact.form.surname" for="surname"></label>
+                        <input type="text" name="surname" id="surname" required>
+                        <label data-i18n="contact.form.company" for="company"></label>
+                        <input type="text" name="company" id="company">
+                        <label data-i18n="contact.form.email" for="email"></label>
+                        <input type="text" name="email" id="email" required>
+                        <label data-i18n="contact.form.phone"for="telf"></label>
+                        <input type="tel" name="telf" id="telf" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencia de modo de contacto:</legend>
+                        <div><input type="radio" name="modo-contacto" value="telf">Teléfono</div>
+                        <div><input type="radio" name="modo-contacto" value="email">Email</div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Cómo me has conocido:</legend>
+                        <label class="inline-block" for="conocido">Selecciona por qué medio nos has conocido:</label>
+                        <select name="conocido" id="conocido">
+                            <option value="redes">Redes sociales</option>
+                            <option value="anuncios">Anuncios</option>
+                            <option value="google">Google</option>
+                            <option value="trabajador">Trabajador</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </section>
+    </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p data-i18n="common.footer"></p>
+        </div>
+        <ul class="redesSociales">
+            <li>
+                <a href="https://www.linkedin.com/in/memfuentes/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/memfu" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

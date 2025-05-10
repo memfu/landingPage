@@ -52,10 +52,11 @@
     "title": "Contáctame",
     "description": "¿Quieres trabajar conmigo o tienes una pregunta? Envíame un mensaje.",
     "form": {
-      "name": "Nombre",
-      "surname": "Apellidos",
-      "company": "Empresa",
-      "email": "Correo electrónico",
+      "name": "Nombre (*):",
+      "surname": "Apellidos (*):",
+      "company": "Empresa:",
+      "email": "Correo electrónico (*):",
+      "phone": "Teléfono (*):",
       "message": "Mensaje",
       "submit": "Enviar"
     },
