@@ -263,9 +263,7 @@ footer {
 }
 
 .contenidoCV section {
-    /* position: relative; */
-    /* width: 100%; Para que ocupe todo el ancho de la pantalla */
-    min-height: 0; /*Para anuular el min-height del section general*/
+    min-height: 0; /*Para anular el min-height del section general*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,6 +318,36 @@ footer {
     background: var(--teal);
     transition: 0.5s;
 }
+
+/***********************************************************/
+/*Proyectos*/
+
+.contenidoProjects {
+    display: flex;
+    /* Distribución vertical */
+    flex-direction: column;
+    /* Alinea los elementos hijos al inicio del eje principal del contenedor */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenidoProjects section {
+    min-height: 0; /*Para anular el min-height del section general*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+
+.projects-section #projects-list {
+    background-color: var(--champagne);
+    padding: 2em;
+    border-radius: 10px;
+}
+
 
 
 /***********************************************************/

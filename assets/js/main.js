@@ -65,9 +65,31 @@ function renderExperience() {
         <li>
           <strong>${item.name}</strong><br>
           ${item.desc}<br>
-          <em>${item.url}</em>
+          <a href="${item.url}" target="_blank">GitHub</a>
         </li>
         <br>
       `;
     });
   }
+
+// function renderProjects() {
+//   const projectList = i18next.t('projects.projectsList', { returnObjects: true });
+//   const container = document.getElementById('projects-container');
+//   if (!container) return;
+
+//   container.innerHTML = '';
+
+//   projectList.forEach(project => {
+//     const projectDiv = document.createElement('div');
+//     projectDiv.className = 'project-item';
+
+//     projectDiv.innerHTML = `
+//       <h3>${project.name}</h3>
+//       <p>${project.desc}</p>
+//       <a href="${project.url}" target="_blank">GitHub</a>
+//       <br>
+//     `;
+
+//     container.appendChild(projectDiv);
+//   });
+// }
