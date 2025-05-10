@@ -10,11 +10,11 @@
     <script src="./assets/js/i18.js"></script>
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Curriculum Vitar</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Curriculum Vitae</title>
 </head>
 <body>
     <section>
-        <div class="circulo"></div>
         <header>
             <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
             <ul class="navbar">
@@ -37,19 +37,22 @@
                 <button onclick="loadLanguage('de')">DE</button>
             </div>
         </header>
-        <main class="cv-container">
-            <h1 data-i18n="cv.title"></h1>
+        <main class="contenidoCV">
+            <div class="tituloBlanco">
+                <h2 data-i18n="cv.title"></h2>
+            </div>
+            <section class="education-section" id="education">
+                <h2><span data-i18n="cv.education"></span></h2>
+                <ul id="education-list"></ul>
+            </section>
+
+            <section class="experience-section" id="experience">
+                <h2><span data-i18n="cv.experience"></span></h2>
+                <ul id="experience-list"></ul>
+            </section>
+
             <a id="cv-download" class="download-btn" data-i18n="cv.download" target="_blank"></a>
 
-            <section class="education-section">
-            <h2 data-i18n="cv.education"></h2>
-            <ul id="education-list"></ul>
-            </section>
-
-            <section class="experience-section">
-            <h2 data-i18n="cv.experience"></h2>
-            <ul id="experience-list"></ul>
-            </section>
         </main>
         <div class="copyright">
             <p data-i18n="common.footer"></p>

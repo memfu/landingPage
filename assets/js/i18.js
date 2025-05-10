@@ -1,11 +1,13 @@
 // Configuración inicial
-i18next.init(
-  {
-  lng: 'es', // Idioma por defecto
+
+const savedLang = localStorage.getItem('lang') || 'es'; // Esto es para que busque primero el idioma en localStorage, si no hay será ES
+
+i18next.init({
+  lng: savedLang,
   debug: false, // Así no se ven los mensajes en la consola
   resources: {} // Las traducciones las cargamos luego
   }, function(err, t) { // err por si hay un error al iniciar i18next, t es una función propia para traducir textos
-  loadLanguage('es'); // Carga idioma inicial 
+  loadLanguage(savedLang); // Carga idioma del localStorage 
   }
 );
 
@@ -21,9 +23,14 @@ function loadLanguage(lang) { // Aquí recibe el idioma seleccionado por el usua
       1er true: si ya existía contenido para ese idioma, reemplázalo (overwrite).
       2o true: marca el bundle como inicializado para usarlo enseguida
       */
-      i18next.changeLanguage(lang, updateContent); // Con la función updateContent aplica la traducción a la página
+      i18next.changeLanguage(lang, () => { 
+        // () => { ... } → función callback: el bloque de código se ejecuta justo después de que el idioma se haya cambiado correctamente.
+        updateContent();
+        localStorage.setItem('lang', lang);
+      });
     });
 }
+
 
 // Función para traducir textos simples (con data-i18n)
 function updateContent() {
@@ -38,11 +45,7 @@ function updateContent() {
   });
 
   // Si hay contenido dinámico como el CV, actualizamos también eso
-  if (typeof renderCvContent === 'function') {
-    renderCvContent();
-  }
-
-  if (typeof renderProjectCards === 'function') {
-    renderProjectCards();
-  }
+  if (typeof renderCvContent === 'function') renderCvContent();
+  if (typeof renderEducation === 'function') renderEducation();
+  updateCvDownloadLink();
 }

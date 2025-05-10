@@ -1,3 +1,14 @@
+/*Paleta de colores: https://coolors.co/001011-093a3e-f6e3cc-16aaaf-1f4866*/
+
+:root {
+    --negro: #001011;
+    --teal: #093A3E;
+    --midnight-green: #093A3E;
+    --indigo: #1F4866;
+    --champagne: #F6E3CC;
+    --light-teal: #16AAAF;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,16 +16,13 @@
     font-family: Lato;
 }
 
-/*Paleta de colores: https://coolors.co/001011-093a3e-3aafb9-64e9ee-97c8eb*/
-
 body {
-    background-color: #3AAFB9;
+    /* background-color: var(--dark-aqua); */
     background-image: url(../img/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
-    
+    background-size: cover;
 }
 
 section {
@@ -43,7 +51,7 @@ header .logo {
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: rgb(9,58,62);
+    background-color: var(--teal);
     border-radius: 5px;
     padding: 0 10 px;
     font-family: Quicksand;
@@ -51,7 +59,7 @@ header .logo {
 }
 
 header .logo:hover{
-    color: rgb(9,58,62);
+    color: var(--teal);
     background: white;
     transition: 1s;
 }
@@ -77,97 +85,25 @@ header .navbar li a{
 }
 
 header .navbar li a:hover{
-    border-bottom: 5px solid rgb(9,58,62);
+    border-bottom: 5px solid var(--teal);
     padding: 2px;
 }
 
-/*Contenido de la web*/
-.contenido {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-}
-
-.contenido .tituloBox {
-    position: relative;
-    max-width: 600px;
-    text-align: center;
-}
-
-.contenido .tituloBox h2 {
-    font-size: 2.5em;
+.tituloBlanco {
+    font-size: 1.5em;
     text-transform: uppercase;
     color: white;
+    margin: 1.5em 0;
 }
 
-.contenido .tituloBox h2 span {
-    background: rgb(9,58,62);
-    color: white;
-    padding: 0 10px;
-    text-align: center;
-    font-family: Quicksand;
-    font-weight: 600;
-    border-radius: 20px;
-}
-
-.contenido .tituloBox p{
-    font-size: 1.8em;
-    line-height: 1.5;
-    color: white;
-    font-family: Quicksand;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.contenido .tituloBox a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(9,58,62);
-    background: white;
-    padding: 10px 20px;
-    margin: left 30px;
-    border-radius: 20px;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.contenido .tituloBox a:hover{
-    color: white;
-    background: rgb(9,58,62);
-    transition: 0.5s;
-}
-
-.contenido .tituloBox .frase {
-    margin-top: 10px;
-    font-family: "Lato cursiva";
-    font-size: 1.25em;
-}
-
-.contenido .imgBox{
-    width: 400px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: -50px;
-    z-index: -5; /*Para ponerlo por detrás del texto*/
-}
-
-.contenido .imgBox img {
-    height: 50vh;
-}
-
-.contenido .imgBox img:hover{
-    height: 50vh;
-}
+/***********************************************************/
+/*Contenido común*/
 
 /*Copyright*/
 .copyright {
     position: absolute;
     bottom: 0px;
-    left: 800px;
+    /* left: 800px; */
     margin-bottom: 20px;
     padding: 0 100px 30px;
     display: flex;
@@ -207,6 +143,90 @@ header .navbar li a:hover{
     color: rgb(9,58,62);
 }
 
+/***********************************************************/
+/*Contenido de Home*/
+.contenidoHome {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenidoHome .tituloBox {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenidoHome .tituloBox h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contenidoHome .tituloBox h2 span {
+    background: var(--teal);
+    color: white;
+    /* padding: 0 10px; */
+    text-align: center;
+    font-size: 0.5em;
+    font-family: Quicksand;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenidoHome .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenidoHome .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenidoHome .tituloBox a:hover{
+    color: white;
+    background: var(--teal);
+    transition: 0.5s;
+}
+
+.contenidoHome .tituloBox .frase {
+    margin-top: 10px;
+    font-family: "Lato cursiva";
+    font-size: 1.25em;
+}
+
+.contenidoHome .imgBox{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5; /*Para ponerlo por detrás del texto*/
+}
+
+.contenidoHome .imgBox img {
+    height: 50vh;
+}
+
+.contenidoHome .imgBox img:hover{
+    height: 50vh;
+}
+
 /*******************************/
 /*Círculo*/
 .circulo {
@@ -220,7 +240,58 @@ header .navbar li a:hover{
     z-index: -1000;
 }
 
+/***********************************************************/
+/*Contenido CV*/
+.contenidoCV {
+    display: flex;
+    /* Distribución vertical */
+    flex-direction: column;
+    /* Alinea los elementos hijos al inicio del eje principal del contenedor */
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.contenidoCV section {
+    /* position: relative; */
+    /* width: 100%; Para que ocupe todo el ancho de la pantalla */
+    min-height: 0; /*Para anuular el min-height del section general*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+
+.contenidoCV #education {
+    background-color: var(--champagne);
+}
+
+.contenidoCV #experience {
+    background-color: whitesmoke;
+}
+
+.contenidoCV section h2 span {
+    background: var(--teal);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: Quicksand;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.contenidoCV section ul {
+    margin-top: 2em;
+    font-family: "Lato cursiva";
+    font-size: 1em;
+    color: var(--negro);
+}
+
+/***********************************************************/
 /*Tipografías*/
 @font-face {
     /*Títulos*/
