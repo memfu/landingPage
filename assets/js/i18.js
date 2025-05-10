@@ -45,7 +45,7 @@ function updateContent() {
   });
 
   // Si hay contenido dinámico como el CV, actualizamos también eso
-  if (typeof renderCvContent === 'function') renderCvContent();
   if (typeof renderEducation === 'function') renderEducation();
+  if (typeof renderExperience === 'function') renderExperience();
   updateCvDownloadLink();
 }

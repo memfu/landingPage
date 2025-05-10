@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +12,54 @@
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <title>Inicio MEMF</title>
+    <title data-i18n="common.nav.home"></title>
 </head>
+
 <body>
-    <section id="sectionHome">
-        <div class="circulo"></div>
-        <header>
-            <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
-            <ul class="navbar">
-                <li>
-                    <a href="index.html" data-i18n="common.nav.home"></a>
-                </li>
-                <li>
-                    <a href="projects.html" data-i18n="common.nav.projects"></a>
-                </li>
-                <li>
-                    <a href="cv.html" data-i18n="common.nav.cv"></a>
-                </li>
-                <li>
-                    <a href="contact.html" data-i18n="common.nav.contact"></a>
-                </li>
-            </ul>
-            <div class="lang-buttons">
-                <button onclick="loadLanguage('es')">ES</button>
-                <button onclick="loadLanguage('en')">EN</button>
-                <button onclick="loadLanguage('de')">DE</button>
+    <div class="circulo"></div>
+    <main>
+        <section id="sectionHome">
+            <header>
+                <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
+                <ul class="navbar">
+                    <li>
+                        <a href="index.html" data-i18n="common.nav.home"></a>
+                    </li>
+                    <li>
+                        <a href="projects.html" data-i18n="common.nav.projects"></a>
+                    </li>
+                    <li>
+                        <a href="cv.html" data-i18n="common.nav.cv"></a>
+                    </li>
+                    <li>
+                        <a href="contact.html" data-i18n="common.nav.contact"></a>
+                    </li>
+                </ul>
+                <div class="lang-buttons">
+                    <button onclick="loadLanguage('es')">ES</button>
+                    <button onclick="loadLanguage('en')">EN</button>
+                    <button onclick="loadLanguage('de')">DE</button>
+                </div>
+            </header>
+            <div class="contenidoHome">
+                <div class="tituloBox">
+                    <h2 data-i18n="home.welcome"></h2>
+                    <h2><span data-i18n="home.title"></span></h2>
+                    <p data-i18n="home.subtitle" class="frase"></p>
+                    <p data-i18n="home.description" class="frase"></p>
+                    <a href="cv.html" data-i18n="home.moreAboutMe"></a>
+                </div>
+                <div class="imgBox">
+                    <img src="./assets/img/avatar_memf.png" alt="MEMF">
+                </div>
             </div>
-        </header>
-        <div class="contenidoHome">
-            <div class="tituloBox">
-                <h2 data-i18n="home.welcome"></h2>
-                <h2><span data-i18n="home.title"></span></h2>
-                <p data-i18n="home.subtitle" class="frase"></p>
-                <p data-i18n="home.description" class="frase"></p>
-                <a href="cv.html" data-i18n="home.moreAboutMe"></a>
-            </div>
-            <div class="imgBox">
-                <img src="./assets/img/avatar_memf.png" alt="MEMF">
-            </div>
-        </div>
+        </section>
+    </main>
+    <footer>
         <div class="copyright">
             <p data-i18n="common.footer"></p>
         </div>
         <ul class="redesSociales">
-            <!-- <li>
-                <a href="#">
-                    <ion-icon name="mail-outline"></ion-icon>
-                </a>
-            </li> -->
             <li>
                 <a href="https://www.linkedin.com/in/memfuentes/" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
@@ -70,6 +71,6 @@
                 </a>
             </li>
         </ul>
-    </section>
+    </footer>
 </body>
 </html>

@@ -1,107 +1,134 @@
 {
-    "common": {
-      "language": "Language",
-      "selectLanguage": "Select language",
-      "nav": {
-        "home": "Home",
-        "projects": "Projects",
-        "contact": "Contact",
-        "cv": "Resume"
-      },
-      "footer": "© Personal website created for the DAM subject 'Lenguaje de Marcas'"
+  "common": {
+    "language": "Language",
+    "selectLanguage": "Select language",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contact": "Contact",
+      "cv": "Resume"
     },
-    "home": {
-      "welcome": "Hi, I'm María Eugenia",
-      "title": "Cross-platform application developer",
-      "subtitle": "QA Software Tester / Test Manager",
-      "description": "QA tester with a technical background, trilingual and solution-oriented – I optimize processes and test with purpose.",
-      "moreAboutMe": "More about me"
+    "footer": "© Personal website created for the DAM subject 'Lenguaje de Marcas'"
+  },
+  "home": {
+    "welcome": "Hi, I'm María Eugenia",
+    "title": "Cross-platform application developer",
+    "subtitle": "QA Software Tester / Test Manager",
+    "description": "QA tester with a technical background, trilingual and solution-oriented – I optimize processes and test with purpose.",
+    "moreAboutMe": "More about me"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on.",
+    "project1": {
+      "name": "Corporate Website for Breaking Bad",
+      "desc": "Web page with a table and a form.",
+      "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
     },
-    "projects": {},
-    "contact": {
-      "title": "Contact Me",
-      "description": "Want to work with me or have a question? Send me a message.",
-      "form": {
-        "name": "Name",
-        "surname": "Surname",
-        "company": "Company",
-        "email": "Email",
-        "message": "Message",
-        "submit": "Send"
-      },
-      "success": "Thank you! I'll get back to you soon."
+    "project2": {
+      "name": "Salary Calculator",
+      "desc": "An Android app that calculates net salary based on different factors using Retrofit.",
+      "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
     },
-    "cv": {
-      "title": "Resume",
-      "download": "Download PDF",
-      "education": "Education",
-      "educationList": [
-        {
-          "degree": "Bachelor's in Translation and Interpreting (Spanish, English, German)",
-          "institution": "University of Murcia (Spain)",
-          "years": "2005 - 2010"
-        },
-        {
-          "degree": "Binational Master's in Teaching German as a Foreign Language",
-          "institution": "University of Salamanca (Spain) and Universität Leipzig (Germany)",
-          "years": "2010 - 2012"
-        },
-        {
-          "degree": "Dual Degree in Business Administration",
-          "institution": "Internationale Berufsakademie Leipzig (Germany)",
-          "years": "2016 - 2019"
-        },
-        {
-          "degree": "Advanced Vocational Training in Cross-platform Application Development",
-          "institution": "Universidad Internacional de la Rioja (UNIR) (Spain)",
-          "years": "2022 - Present"
-        }
-      ],
-      "experience": "Work Experience",
-      "experienceList": [
-        {
-          "position": "Dev-QA / Software Tester",
-          "company": "mgm technology partners GmbH",
-          "location": "Leipzig, Germany",
-          "years": "2021 - 2024",
-          "description": "Responsible for manual and automated testing, bug tracking, test case design and customer communication. Tools used: JIRA, TestRail, QF-Test, Jenkins, TortoiseGit."
-        },
-        {
-          "position": "HR Consultant / Sales Manager",
-          "company": "Truffls GmbH",
-          "location": "Berlin, Germany",
-          "years": "2019 - 2020",
-          "description": "Sales and account management with focus on startups and SMEs. Used Salesforce, conducted workshops and trained new employees."
-        },
-        {
-          "position": "Dual Degree Student in HR Department",
-          "company": "Volkswagen Automobile Leipzig GmbH",
-          "location": "Leipzig, Germany",
-          "years": "2016 - 2019",
-          "description": "Event planning, applicant management and process optimization. Developed tools for applicant evaluation and knowledge management."
-        },
-        {
-          "position": "Freelance Translator",
-          "company": "Amazon Core S.à.r.l.",
-          "location": "Leipzig, Germany",
-          "years": "2014 - 2019",
-          "description": "Translation and post-editing projects from English and German into Spanish for over 60 projects."
-        },
-        {
-          "position": "Market Expansion Consultant, Translator and Customer Support",
-          "company": "InterCultural Elements GmbH & Co.",
-          "location": "Leipzig, Germany",
-          "years": "2014 - 2016",
-          "description": "International e-commerce expansion and multilingual customer support. Handled around 20 returns daily."
-        },
-        {
-          "position": "Multilingual Customer Support",
-          "company": "Wirecard Communication Services GmbH",
-          "location": "Leipzig, Germany",
-          "years": "2013 - 2014",
-          "description": "Customer service in multiple languages."
-        }
-      ]
+    "project3": {
+      "name": "Movie Search App",
+      "desc": "An Android app to filter movies using an API.",
+      "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
+    },
+    "project4": {
+      "name": "Course Manager for New Mothers",
+      "desc": "An app to manage a database using JPA.",
+      "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
+    },
+    "project5": {
+      "name": "Library Management System",
+      "desc": "An app to manage a database with SpringBoot.",
+      "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
     }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Want to work with me or have a question? Send me a message.",
+    "form": {
+      "name": "Name",
+      "surname": "Surname",
+      "company": "Company",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "success": "Thank you! I'll get back to you soon."
+  },
+  "cv": {
+    "title": "Resume",
+    "download": "Download PDF",
+    "education": "Education",
+    "educationList": [
+      {
+        "degree": "Bachelor's in Translation and Interpreting (Spanish, English, German)",
+        "institution": "University of Murcia (Spain)",
+        "years": "2005 - 2010"
+      },
+      {
+        "degree": "Binational Master's in Teaching German as a Foreign Language",
+        "institution": "University of Salamanca (Spain) and Universität Leipzig (Germany)",
+        "years": "2010 - 2012"
+      },
+      {
+        "degree": "Dual Degree in Business Administration",
+        "institution": "Internationale Berufsakademie Leipzig (Germany)",
+        "years": "2016 - 2019"
+      },
+      {
+        "degree": "Advanced Vocational Training in Cross-platform Application Development",
+        "institution": "Universidad Internacional de la Rioja (UNIR) (Spain)",
+        "years": "2022 - Present"
+      }
+    ],
+    "experience": "Work Experience",
+    "experienceList": [
+      {
+        "position": "Dev-QA / Software Tester",
+        "company": "mgm technology partners GmbH",
+        "location": "Leipzig, Germany",
+        "years": "2021 - 2024",
+        "description": "Responsible for manual and automated testing, bug tracking, test case design and customer communication. Tools used: JIRA, TestRail, QF-Test, Jenkins, TortoiseGit."
+      },
+      {
+        "position": "HR Consultant / Sales Manager",
+        "company": "Truffls GmbH",
+        "location": "Berlin, Germany",
+        "years": "2019 - 2020",
+        "description": "Sales and account management with focus on startups and SMEs. Used Salesforce, conducted workshops and trained new employees."
+      },
+      {
+        "position": "Dual Degree Student in HR Department",
+        "company": "Volkswagen Automobile Leipzig GmbH",
+        "location": "Leipzig, Germany",
+        "years": "2016 - 2019",
+        "description": "Event planning, applicant management and process optimization. Developed tools for applicant evaluation and knowledge management."
+      },
+      {
+        "position": "Freelance Translator",
+        "company": "Amazon Core S.à.r.l.",
+        "location": "Leipzig, Germany",
+        "years": "2014 - 2019",
+        "description": "Translation and post-editing projects from English and German into Spanish for over 60 projects."
+      },
+      {
+        "position": "Market Expansion Consultant, Translator and Customer Support",
+        "company": "InterCultural Elements GmbH & Co.",
+        "location": "Leipzig, Germany",
+        "years": "2014 - 2016",
+        "description": "International e-commerce expansion and multilingual customer support. Handled around 20 returns daily."
+      },
+      {
+        "position": "Multilingual Customer Support",
+        "company": "Wirecard Communication Services GmbH",
+        "location": "Leipzig, Germany",
+        "years": "2013 - 2014",
+        "description": "Customer service in multiple languages."
+      }
+    ]
   }
-  
+}

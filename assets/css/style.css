@@ -90,6 +90,7 @@ header .navbar li a:hover{
 }
 
 .tituloBlanco {
+    font-family: Quicksand;
     font-size: 1.5em;
     text-transform: uppercase;
     color: white;
@@ -99,33 +100,27 @@ header .navbar li a:hover{
 /***********************************************************/
 /*Contenido común*/
 
-/*Copyright*/
-.copyright {
-    position: absolute;
-    bottom: 0px;
-    /* left: 800px; */
-    margin-bottom: 20px;
-    padding: 0 100px 30px;
+footer {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
 }
 
-.copyright p {
+/*Copyright*/
+.copyright {
+    bottom: 0px;
+    margin-bottom: 1em;
     color: white;
     text-align: center;
-    margin-left: 100px;
 }
 
 /*Redes sociales*/
 .redesSociales {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 30 px;
     list-style: none;
 }
 
@@ -140,7 +135,27 @@ header .navbar li a:hover{
 }
 
 .redesSociales li:hover a{
-    color: rgb(9,58,62);
+    color: var(--teal);
+}
+
+/*******************************/
+/*Botones idiomas*/
+.lang-buttons button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: white;
+    padding: 5px 5px;
+    margin: left 30px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.lang-buttons button:hover {
+    color: white;
+    background: var(--teal);
+    transition: 0.5s;
 }
 
 /***********************************************************/
@@ -223,10 +238,6 @@ header .navbar li a:hover{
     height: 50vh;
 }
 
-.contenidoHome .imgBox img:hover{
-    height: 50vh;
-}
-
 /*******************************/
 /*Círculo*/
 .circulo {
@@ -291,15 +302,40 @@ header .navbar li a:hover{
     color: var(--negro);
 }
 
+.download-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: white;
+    padding: 5px 5px;
+    margin: left 30px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.download-btn:hover {
+    color: white;
+    background: var(--teal);
+    transition: 0.5s;
+}
+
+
 /***********************************************************/
 /*Tipografías*/
+/*Títulos*/
 @font-face {
-    /*Títulos*/
-    font-family: Quicksand;
-    src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
-    /*Resto de texto*/
-    font-family: Lato;
-    src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
-    font-family: "Lato cursiva";
-    src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype");
+  font-family: 'Quicksand';
+  src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
+}
+/*Resto de texto*/
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Lato cursiva';
+  src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype");
 }
