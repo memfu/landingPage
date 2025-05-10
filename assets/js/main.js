@@ -55,17 +55,17 @@ function renderExperience() {
  /**************************/
  /*Projects*/
  function renderProjects() {
-    const expList = i18next.t('cv.experienceList', { returnObjects: true });
-    const container = document.getElementById('experience-list');
+    const expList = i18next.t('projects.projectsList', { returnObjects: true });
+    const container = document.getElementById('projects-list');
     if (!container) return;
   
     container.innerHTML = '';
     expList.forEach(item => {
       container.innerHTML += `
         <li>
-          <strong>${item.position}</strong> – ${item.company} (${item.years})<br>
-          ${item.location}<br>
-          <em>${item.description}</em>
+          <strong>${item.name}</strong><br>
+          ${item.desc}<br>
+          <em>${item.url}</em>
         </li>
         <br>
       `;
