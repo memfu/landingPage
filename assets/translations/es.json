@@ -20,31 +20,33 @@
   "projects": {
     "title": "Proyectos",
     "description": "Estos son algunos de los proyectos en los que he trabajado.",
-    "project1": {
-      "name": "Web Corporativa de Breaking Bad",
-      "desc": "Página web con tabla y formulario.",
-      "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
-    },
-    "project2": {
-      "name": "Calculadora de salario",
-      "desc": "Una app de Android que calcula el salario neto según distintos factores usando Retrofit.",
-      "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
-    },
-    "project3": {
-      "name": "Buscador de películas",
-      "desc": "Una app de Android para filtrar películas usando API.",
-      "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
-    },
-    "project4": {
-      "name": "Programa para gestionar cursos para madres primerizas",
-      "desc": "Una app para gestionar una base de datos mediante JPA.",
-      "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
-    },
-    "project5": {
-      "name": "Programa para gestionar librerías",
-      "desc": "Una app para gestionar una base de datos con SpringBoot.",
-      "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
-    }
+    "projectsList": [
+      {
+        "name": "Web Corporativa de Breaking Bad",
+        "desc": "Página web con tabla y formulario.",
+        "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
+      },
+      {
+        "name": "Calculadora de salario",
+        "desc": "Una app de Android que calcula el salario neto según distintos factores usando Retrofit.",
+        "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
+      },
+      {
+        "name": "Buscador de películas",
+        "desc": "Una app de Android para filtrar películas usando API.",
+        "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
+      },
+      {
+        "name": "Programa para gestionar cursos para madres primerizas",
+        "desc": "Una app para gestionar una base de datos mediante JPA.",
+        "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
+      },
+      {
+        "name": "Programa para gestionar librerías",
+        "desc": "Una app para gestionar una base de datos con SpringBoot.",
+        "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
+      }
+    ]
   },
   "contact": {
     "title": "Contáctame",

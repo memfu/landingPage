@@ -48,4 +48,6 @@ function updateContent() {
   if (typeof renderEducation === 'function') renderEducation();
   if (typeof renderExperience === 'function') renderExperience();
   updateCvDownloadLink();
+  if (typeof renderProjects === 'function') renderProjects();
+  updateCvDownloadLink();
 }

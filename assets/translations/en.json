@@ -20,31 +20,33 @@
   "projects": {
     "title": "Projects",
     "description": "Here are some of the projects I've worked on.",
-    "project1": {
-      "name": "Corporate Website for Breaking Bad",
-      "desc": "Web page with a table and a form.",
-      "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
-    },
-    "project2": {
-      "name": "Salary Calculator",
-      "desc": "An Android app that calculates net salary based on different factors using Retrofit.",
-      "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
-    },
-    "project3": {
-      "name": "Movie Search App",
-      "desc": "An Android app to filter movies using an API.",
-      "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
-    },
-    "project4": {
-      "name": "Course Manager for New Mothers",
-      "desc": "An app to manage a database using JPA.",
-      "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
-    },
-    "project5": {
-      "name": "Library Management System",
-      "desc": "An app to manage a database with SpringBoot.",
-      "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
-    }
+    "projectsList": [
+      {
+        "name": "Corporate Website for Breaking Bad",
+        "desc": "Web page with a table and a form.",
+        "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
+      },
+      {
+        "name": "Salary Calculator",
+        "desc": "An Android app that calculates net salary based on different factors using Retrofit.",
+        "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
+      },
+      {
+        "name": "Movie Search App",
+        "desc": "An Android app to filter movies using an API.",
+        "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
+      },
+      {
+        "name": "Course Manager for New Mothers",
+        "desc": "An app to manage a database using JPA.",
+        "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
+      },
+      {
+        "name": "Library Management System",
+        "desc": "An app to manage a database with SpringBoot.",
+        "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
+      }
+    ]
   },
   "contact": {
     "title": "Contact Me",

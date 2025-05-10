@@ -1,3 +1,5 @@
+ /**************************/
+ /*CV*/
  // Renderiza la formación académica desde i18next
   function renderEducation() {
     const edList = i18next.t('cv.educationList', { returnObjects: true });
@@ -34,8 +36,6 @@ function renderExperience() {
       `;
     });
   }
-  
- 
 
   function updateCvDownloadLink() {
   const lang = i18next.language;
@@ -51,4 +51,23 @@ function renderExperience() {
 
   link.href = fileMap[lang] || fileMap.es; // fallback a español si no encuentra
 }
+
+ /**************************/
+ /*Projects*/
+ function renderProjects() {
+    const expList = i18next.t('cv.experienceList', { returnObjects: true });
+    const container = document.getElementById('experience-list');
+    if (!container) return;
   
+    container.innerHTML = '';
+    expList.forEach(item => {
+      container.innerHTML += `
+        <li>
+          <strong>${item.position}</strong> – ${item.company} (${item.years})<br>
+          ${item.location}<br>
+          <em>${item.description}</em>
+        </li>
+        <br>
+      `;
+    });
+  }

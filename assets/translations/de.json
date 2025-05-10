@@ -20,31 +20,33 @@
   "projects": {
     "title": "Projekte",
     "description": "Hier sind einige der Projekte, an denen ich gearbeitet habe.",
-    "project1": {
-      "name": "Unternehmenswebseite zu Breaking Bad",
-      "desc": "Webseite mit Tabelle und Formular.",
-      "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
-    },
-    "project2": {
-      "name": "Gehaltsrechner",
-      "desc": "Eine Android-App zur Berechnung des Nettogehalts basierend auf verschiedenen Faktoren mit Retrofit.",
-      "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
-    },
-    "project3": {
-      "name": "Filmsuch-App",
-      "desc": "Eine Android-App zum Filtern von Filmen über eine API.",
-      "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
-    },
-    "project4": {
-      "name": "Kursverwaltung für Erstlingsmütter",
-      "desc": "Eine App zur Verwaltung einer Datenbank mit JPA.",
-      "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
-    },
-    "project5": {
-      "name": "Verwaltungssystem für Buchhandlungen",
-      "desc": "Eine App zur Verwaltung einer Datenbank mit SpringBoot.",
-      "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
-    }
+    "projectsList": [
+      {
+        "name": "Unternehmenswebseite zu Breaking Bad",
+        "desc": "Webseite mit Tabelle und Formular.",
+        "url": "https://github.com/memfu/LLMM/tree/main/Actividad_WebCorporativa_MartinFuentes_MariaEugenia"
+      },
+      {
+        "name": "Gehaltsrechner",
+        "desc": "Eine Android-App zur Berechnung des Nettogehalts basierend auf verschiedenen Faktoren mit Retrofit.",
+        "url": "https://github.com/memfu/PMDM/tree/main/calculadora_salario"
+      },
+      {
+        "name": "Filmsuch-App",
+        "desc": "Eine Android-App zum Filtern von Filmen über eine API.",
+        "url": "https://github.com/memfu/PMDM/tree/main/Ejercicio-Retrofit_20250130"
+      },
+      {
+        "name": "Kursverwaltung für Erstlingsmütter",
+        "desc": "Eine App zur Verwaltung einer Datenbank mit JPA.",
+        "url": "https://github.com/memfu/AD/tree/main/AE-4_JPA_Req2"
+      },
+      {
+        "name": "Verwaltungssystem für Buchhandlungen",
+        "desc": "Eine App zur Verwaltung einer Datenbank mit SpringBoot.",
+        "url": "https://github.com/memfu/AD/tree/main/LibreriaAPIS"
+      }
+    ]
   },
   "contact": {
     "title": "Kontaktiere mich",
