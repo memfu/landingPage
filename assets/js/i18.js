@@ -39,9 +39,16 @@ function updateContent() {
     const key = el.getAttribute('data-i18n'); // Por cada elemento (el) obtiene el valor dentro del atributo data-i18n
     const text = i18next.t(key); // Si encuentra la key devuelve el texto traducido con .t
     /*
-     * if (text) es equivalente a if (text !== null && text !== undefined && text !== '') {el.textContent = text;}
+     * if (text) es equivalente a if (text !== null && text !== undefined && text !== '')
      */
-    if (text) el.textContent = text; // cambia el texto visible del elemento del HTML
+    if (text) {
+      // Si el elemento es un input de tipo submit o reset, actualiza el atributo value
+      if (el.tagName === 'INPUT' && (el.type === 'submit' || el.type === 'reset')) {
+        el.value = text;
+      } else {
+        el.textContent = text;
+      }
+    }
   });
 
   // Si hay contenido dinámico como el CV, actualizamos también eso

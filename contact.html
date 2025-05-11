@@ -87,9 +87,13 @@
                         <textarea data-i18n="contact.form.messagePlaceholder" name="message" id="message"></textarea>
                     </fieldset>
                     <div class="buttons-form">
+                        <!-- Para los botones de tipo submit y reset no se puede cambiar el value directamente.
+                         Por eso hay que manejar este caso en el i18.js directamente -->
                         <input class="inline-block" type="submit" data-i18n="contact.form.submit">
                         <input class="inline-block" type="reset" data-i18n="contact.form.reset">
                     </div>
+
+
                 </form>
             </section>
     </section>
