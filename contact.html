@@ -48,18 +48,29 @@
                 <form action="mailto:me.martinfuentes@gmail.com" method="post">
                     <fieldset>
                         <legend data-i18n="contact.form.personal"></legend>
-                        <label data-i18n="contact.form.name" for="name"></label>
-                        <input type="text" name="name" id="name" required>
-                        <label data-i18n="contact.form.surname" for="surname"></label>
-                        <input type="text" name="surname" id="surname" required>
-                        <label data-i18n="contact.form.company" for="company"></label>
-                        <input type="text" name="company" id="company">
-                        <label data-i18n="contact.form.email" for="email"></label>
-                        <input type="email" name="email" id="email" required>
-                        <label data-i18n="contact.form.phone" for="phone"></label>
-                        <!-- El input de Teléfono es de tipo text para en caso de que sea
-                            un nr. internacional (empezando por + o por 0) no haya problemas-->
-                        <input type="text" name="phone" id="phone" required>
+                        <div class="grupoCampos">
+                            <label data-i18n="contact.form.name" for="name"></label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="grupoCampos">
+                            <label data-i18n="contact.form.surname" for="surname"></label>
+                            <input type="text" name="surname" id="surname" required>
+                        </div>
+                        <div class="grupoCampos">
+                            <label data-i18n="contact.form.company" for="company"></label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div class="grupoCampos">
+                            <label data-i18n="contact.form.email" for="email"></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="grupoCampos">
+                            <label data-i18n="contact.form.phone" for="phone"></label>
+                            <!-- El input de Teléfono es de tipo text para en caso de que sea
+                            un nr. internacional (empezando por + o por 0) no haya problemas
+                            Otra opción sería modificar el pattern del tipo tel-->
+                            <input type="text" name="phone" id="phone" required>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend data-i18n="contact.form.contact"></legend>
@@ -84,6 +95,8 @@
                     </fieldset>
                     <fieldset>
                         <legend data-i18n="contact.form.message"></legend>
+                        <!-- Placeholder no se puede usar directamente con el mensaje del i18.
+                         Por eso lo dejo así -->
                         <textarea data-i18n="contact.form.messagePlaceholder" name="message" id="message"></textarea>
                     </fieldset>
                     <div class="buttons-form">
@@ -92,8 +105,6 @@
                         <input class="inline-block" type="submit" data-i18n="contact.form.submit">
                         <input class="inline-block" type="reset" data-i18n="contact.form.reset">
                     </div>
-
-
                 </form>
             </section>
     </section>
