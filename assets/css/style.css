@@ -1,5 +1,7 @@
 /*Paleta de colores: https://coolors.co/001011-093a3e-f6e3cc-16aaaf-1f4866*/
 
+/***********************************************************/
+/*Contenido común*/
 :root {
     --negro: #001011;
     --teal: #093A3E;
@@ -17,7 +19,13 @@
 }
 
 body {
-    /* background-color: var(--dark-aqua); */
+    position: relative;
+    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
+    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,14 +33,8 @@ body {
     background-size: cover;
 }
 
-section {
-    position: relative;
-    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
-    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+main {
+    padding: 70px 100px;
 }
 
 header {
@@ -40,7 +42,8 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 40px 100px;
+    padding-bottom: 100px;
+    /* padding: 400px 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,17 +67,26 @@ header .logo:hover{
     transition: 1s;
 }
 
-header .navbar {
+header nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+}
+
+header nav .navbar {
     position: relative;
     display: flex;
 }
 
-header .navbar li {
+header nav .navbar li {
     list-style: none;
     margin-left: 30px;
 }
 
-header .navbar li a{
+header nav .navbar li a{
     text-decoration: none;
     color: whitesmoke;
     font-weight: 600;
@@ -84,9 +96,14 @@ header .navbar li a{
     text-transform: uppercase;
 }
 
-header .navbar li a:hover{
+header nav .navbar li a:hover{
     border-bottom: 5px solid var(--teal);
     padding: 2px;
+}
+
+/*Oculta el checkbox de la esquina derecha*/
+header nav  #ckbox {
+    display: none;
 }
 
 .tituloBlanco {
@@ -97,21 +114,105 @@ header .navbar li a:hover{
     margin: 1.5em 0;
 }
 
-/***********************************************************/
-/*Contenido común*/
+/*Modifica el menú*/
+nav ul {
+    display: flex;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 0.8em 1em;
+}
+
+nav ul li a p {
+    margin-left: 0.5em;
+    display: inline-block;
+}
+
+/*hover de las opciones del menú*/
+nav ul li:hover {
+    background-color: var(--aqua);
+    transition: all 0.3s;
+}
+
+/*submenú*/
+nav li ul {
+    display: none;
+    position: absolute;
+    /* min-width: 150px; */
+}
+
+nav li:hover>ul {
+    /*Mostar los submenús cuando se hace hover*/
+    display: block;
+    background-color: var(--dark-aqua);
+}
+
+
+/* Icono de triple barra del menu*/
+.drawer {
+    color: var(--white);
+    float: left;
+    cursor: pointer;
+    display: none;
+    border: solid 0.1em var(--white);
+    padding: 0.2em;
+    border-radius: 0.1em;
+}
+
+/*******************************/
+/*Botones idiomas*/
+.lang-buttons button,
+.contenidoContact form .buttons-form input {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: whitesmoke;
+    padding: 5px 5px;
+    margin: left 30px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.lang-buttons button:hover,
+.contenidoContact form .buttons-form input:hover {
+    color: whitesmoke;
+    background: var(--teal);
+    transition: 0.5s;
+}
+
+/*******************************/
+/*Dentro del contenido*/
+
+section {
+    position: relative;
+    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
+    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/*******************************/
+/*Footer*/
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  gap: 50em; /* Añade espacio horizontal entre los elementos */
 }
 
 /*Copyright*/
 .copyright {
-    bottom: 0px;
-    margin-bottom: 1em;
     color: whitesmoke;
     text-align: center;
 }
@@ -138,37 +239,17 @@ footer {
     color: var(--teal);
 }
 
-/*******************************/
-/*Botones idiomas*/
-.lang-buttons button,
-.contenidoContact form .buttons-form input {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--teal);
-    background: whitesmoke;
-    padding: 5px 5px;
-    margin: left 30px;
-    border-radius: 10px;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.lang-buttons button:hover,
-.contenidoContact form .buttons-form input:hover {
-    color: whitesmoke;
-    background: var(--teal);
-    transition: 0.5s;
-}
-
 /***********************************************************/
 /*Contenido de Home*/
 .contenidoHome {
     position: relative;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding: 10em 0;
+    margin: 0 5em;
 }
 
 .contenidoHome .tituloBox {
@@ -186,7 +267,6 @@ footer {
 .contenidoHome .tituloBox h2 span {
     background: var(--teal);
     color: whitesmoke;
-    /* padding: 0 10px; */
     text-align: center;
     font-size: 0.5em;
     font-family: Quicksand;

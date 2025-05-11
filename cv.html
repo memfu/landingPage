@@ -7,6 +7,7 @@
     <!-- Libreria iconos web https://ionic.io -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Para gestionar la web en diferentes idiomas -->
     <script src="https://unpkg.com/i18next@22.4.7/i18next.min.js"></script>
     <script src="./assets/js/i18.js"></script>
     <script src="./assets/js/main.js"></script>
@@ -16,10 +17,14 @@
 </head>
 
 <body>
-    <section>
-        <header>
-            <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
-            
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </label>
+            <h1 class="logo">María Eugenia Martín Fuentes</h1>
+
             <ul class="navbar">
                 <li>
                     <a href="index.html" data-i18n="common.nav.home"></a>
@@ -35,26 +40,26 @@
                 </li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="loadLanguage('es')">ES</button>
-                <button onclick="loadLanguage('en')">EN</button>
-                <button onclick="loadLanguage('de')">DE</button>
-            </div>
-        </header>
-        <main class="contenidoCV">
-            <div class="tituloBlanco">
-                <h2 data-i18n="cv.title"></h2>
-            </div>
-            <section class="education-section" id="education">
-                <h2><span data-i18n="cv.education"></span></h2>
-                <ul id="education-list"></ul>
-            </section>
+            <button onclick="loadLanguage('es')">ES</button>
+            <button onclick="loadLanguage('en')">EN</button>
+            <button onclick="loadLanguage('de')">DE</button>
+        </div>
+        </nav>
+    </header>
+    <main class="contenidoCV">
+        <div class="tituloBlanco">
+            <h2 data-i18n="cv.title"></h2>
+        </div>
+        <section class="education-section" id="education">
+            <h2><span data-i18n="cv.education"></span></h2>
+            <ul id="education-list"></ul>
+        </section>
 
-            <section class="experience-section" id="experience">
-                <h2><span data-i18n="cv.experience"></span></h2>
-                <ul id="experience-list"></ul>
-            </section>
-            <a id="cv-download" class="download-btn" data-i18n="cv.download" target="_blank"></a>
-    </section>
+        <section class="experience-section" id="experience">
+            <h2><span data-i18n="cv.experience"></span></h2>
+            <ul id="experience-list"></ul>
+        </section>
+        <a id="cv-download" class="download-btn" data-i18n="cv.download" target="_blank"></a>
     </main>
     <footer>
         <div class="copyright">

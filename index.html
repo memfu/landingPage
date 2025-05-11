@@ -16,44 +16,49 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </label>
+            <h1 class="logo">María Eugenia Martín Fuentes</h1>
+
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" data-i18n="common.nav.home"></a>
+                </li>
+                <li>
+                    <a href="projects.html" data-i18n="common.nav.projects"></a>
+                </li>
+                <li>
+                    <a href="cv.html" data-i18n="common.nav.cv"></a>
+                </li>
+                <li>
+                    <a href="contact.html" data-i18n="common.nav.contact"></a>
+                </li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="loadLanguage('es')">ES</button>
+                <button onclick="loadLanguage('en')">EN</button>
+                <button onclick="loadLanguage('de')">DE</button>
+            </div>
+        </nav>
+    </header>
     <div class="circulo"></div>
     <main>
-        <section id="sectionHome">
-            <header>
-                <a href="cv.html" class="logo">María Eugenia Martín Fuentes</a>
-                <ul class="navbar">
-                    <li>
-                        <a href="index.html" data-i18n="common.nav.home"></a>
-                    </li>
-                    <li>
-                        <a href="projects.html" data-i18n="common.nav.projects"></a>
-                    </li>
-                    <li>
-                        <a href="cv.html" data-i18n="common.nav.cv"></a>
-                    </li>
-                    <li>
-                        <a href="contact.html" data-i18n="common.nav.contact"></a>
-                    </li>
-                </ul>
-                <div class="lang-buttons">
-                    <button onclick="loadLanguage('es')">ES</button>
-                    <button onclick="loadLanguage('en')">EN</button>
-                    <button onclick="loadLanguage('de')">DE</button>
-                </div>
-            </header>
-            <div class="contenidoHome">
-                <div class="tituloBox">
-                    <h2 data-i18n="home.welcome"></h2>
-                    <h2><span data-i18n="home.title"></span></h2>
-                    <p data-i18n="home.subtitle" class="frase"></p>
-                    <p data-i18n="home.description" class="frase"></p>
-                    <a href="cv.html" data-i18n="home.moreAboutMe"></a>
-                </div>
-                <div class="imgBox">
-                    <img src="./assets/img/avatar_memf.png" alt="MEMF">
-                </div>
+        <div class="contenidoHome">
+            <div class="tituloBox">
+                <h2 data-i18n="home.welcome"></h2>
+                <h2><span data-i18n="home.title"></span></h2>
+                <p data-i18n="home.subtitle" class="frase"></p>
+                <p data-i18n="home.description" class="frase"></p>
+                <a href="cv.html" data-i18n="home.moreAboutMe"></a>
             </div>
-        </section>
+            <div class="imgBox">
+                <img src="./assets/img/avatar_memf.png" alt="MEMF">
+            </div>
+        </div>
     </main>
     <footer>
         <div class="copyright">
@@ -73,4 +78,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
