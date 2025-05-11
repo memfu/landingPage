@@ -6,7 +6,9 @@
       "home": "Home",
       "projects": "Projects",
       "contact": "Contact",
-      "cv": "Resume"
+      "cv": "Resume",
+      "cvEducation": "Education",
+      "cvExperience": "Work Experience"
     },
     "footer": "© Personal website created for the DAM subject 'Lenguaje de Marcas'"
   },

@@ -6,7 +6,9 @@
       "home": "Startseite",
       "projects": "Projekte",
       "contact": "Kontakt",
-      "cv": "Lebenslauf"
+      "cv": "Lebenslauf",
+      "cvEducation": "Ausbildung",
+      "cvExperience": "Berufserfahrung"
     },
     "footer": "© Persönliche Website erstellt für das DAM-Fach 'Lenguaje de Marcas'"
   },
