@@ -20,8 +20,10 @@
 
 body {
     position: relative;
-    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
-    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
+    /*Para que ocupe todo el ancho de la pantalla*/
+    width: 100%;
+    /*Para que solo use la altura visible de la pantalla*/
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,29 +45,32 @@ header {
     left: 0px;
     width: 100%;
     padding-bottom: 100px;
-    /* padding: 400px 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*Oculta el checkbox de la esquina derecha*/
+header nav #ckbox {
+    display: none;
+}
+
 header .logo {
     color: whitesmoke;
     font-size: 1.5em;
-    text-decoration: none;
     text-transform: uppercase;
     background-color: var(--teal);
     border-radius: 5px;
-    padding: 0 10 px;
+    padding: 0 10px;
     font-family: Quicksand;
     font-weight: 600;
 }
 
-header .logo:hover{
+/* header .logo:hover {
     color: var(--teal);
     background: whitesmoke;
     transition: 1s;
-}
+} */
 
 header nav {
     height: 10vh;
@@ -73,100 +78,48 @@ header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--white);
+    color: whitesmoke;
 }
 
+/* Todos los elementos del menú */
 header nav .navbar {
     position: relative;
     display: flex;
 }
 
+/* Todos los elementos dentro del menú */
 header nav .navbar li {
     list-style: none;
     margin-left: 30px;
 }
 
-header nav .navbar li a{
+/* Elementos del menú principal */
+header nav .navbar li a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: 600;
-    padding: 10px;
-    transition: 0.3s;
+    padding: 0.5em;
     font-size: 0.9em;
     text-transform: uppercase;
 }
 
-header nav .navbar li a:hover{
+header nav .navbar li a:hover {
     border-bottom: 5px solid var(--teal);
     padding: 2px;
-}
-
-/*Oculta el checkbox de la esquina derecha*/
-header nav  #ckbox {
-    display: none;
-}
-
-.tituloBlanco {
-    font-family: Quicksand;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color: whitesmoke;
-    margin: 1.5em 0;
-}
-
-/*Modifica el menú*/
-nav ul {
-    display: flex;
-}
-
-nav ul li:last-child {
-    border-right: none;
-}
-
-nav ul li a {
-    color: var(--white);
-    font-size: 1.2em;
-    padding: 0.8em 1em;
-}
-
-nav ul li a p {
-    margin-left: 0.5em;
-    display: inline-block;
-}
-
-/*hover de las opciones del menú*/
-nav ul li:hover {
-    background-color: var(--aqua);
-    transition: all 0.3s;
-}
-
-/*submenú*/
-nav li ul {
-    display: none;
-    position: absolute;
-    /* min-width: 150px; */
-}
-
-nav li:hover>ul {
-    /*Mostar los submenús cuando se hace hover*/
-    display: block;
-    background-color: var(--dark-aqua);
 }
 
 
 /* Icono de triple barra del menu*/
 .drawer {
-    color: var(--white);
+    display: none;
+    color: whitesmoke;
     float: left;
     cursor: pointer;
-    display: none;
-    border: solid 0.1em var(--white);
     padding: 0.2em;
-    border-radius: 0.1em;
 }
 
 /*******************************/
-/*Botones idiomas*/
+/*Botones idiomas y de formulario*/
 .lang-buttons button,
 .contenidoContact form .buttons-form input {
     text-decoration: none;
@@ -187,13 +140,24 @@ nav li:hover>ul {
     transition: 0.5s;
 }
 
+
 /*******************************/
 /*Dentro del contenido*/
 
+.tituloBlanco {
+    font-family: Quicksand;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin: 1.5em 0;
+}
+
 section {
     position: relative;
-    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
-    min-height: 100vh; /*Para que solo use la altura visible de la pantalla*/
+    width: 100%;
+    /*Para que ocupe todo el ancho de la pantalla*/
+    min-height: 100vh;
+    /*Para que solo use la altura visible de la pantalla*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,11 +168,12 @@ section {
 /*Footer*/
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  gap: 50em; /* Añade espacio horizontal entre los elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    /* Espacio entre los elementos dentro del footer */
+    gap: 20em;
 }
 
 /*Copyright*/
@@ -235,12 +200,12 @@ footer {
     transition: 0.3s;
 }
 
-.redesSociales li:hover a{
+.redesSociales li:hover a {
     color: var(--teal);
 }
 
 /***********************************************************/
-/*Contenido de Home*/
+/*Inicio*/
 .contenidoHome {
     position: relative;
     width: 100%;
@@ -274,7 +239,7 @@ footer {
     border-radius: 20px;
 }
 
-.contenidoHome .tituloBox p{
+.contenidoHome .tituloBox p {
     font-size: 1.8em;
     line-height: 1.5;
     color: whitesmoke;
@@ -283,7 +248,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.contenidoHome .tituloBox a{
+.contenidoHome .tituloBox a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--teal);
@@ -295,7 +260,7 @@ footer {
     transition: 0.5s;
 }
 
-.contenidoHome .tituloBox a:hover{
+.contenidoHome .tituloBox a:hover {
     color: whitesmoke;
     background: var(--teal);
     transition: 0.5s;
@@ -307,13 +272,14 @@ footer {
     font-size: 1.25em;
 }
 
-.contenidoHome .imgBox{
+.contenidoHome .imgBox {
     width: 400px;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
     margin-top: -50px;
-    z-index: -5; /*Para ponerlo por detrás del texto*/
+    /*Para ponerlo por detrás del texto*/
+    z-index: -5;
 }
 
 .contenidoHome .imgBox img {
@@ -345,7 +311,8 @@ footer {
 }
 
 .contenidoCV section {
-    min-height: 0; /*Para anular el min-height del section general*/
+    min-height: 0;
+    /*Para anular el min-height del section general*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -414,7 +381,8 @@ footer {
 }
 
 .contenidoProjects section {
-    min-height: 0; /*Para anular el min-height del section general*/
+    min-height: 0;
+    /*Para anular el min-height del section general*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,16 +399,16 @@ footer {
 }
 
 .project-icon {
-  color: whitesmoke;
-  background-color: var(--teal);
-  font-size: 1.5em;
-  transition: 0.3s;
-  border-radius: 2em;
+    color: whitesmoke;
+    background-color: var(--teal);
+    font-size: 1.5em;
+    transition: 0.3s;
+    border-radius: 2em;
 }
 
 .project-icon:hover {
-  color: var(--teal);
-  background-color: whitesmoke;
+    color: var(--teal);
+    background-color: whitesmoke;
 }
 
 
@@ -457,10 +425,12 @@ footer {
 
 .contenidoContact h3 {
     color: whitesmoke;
+    text-align: center;
 }
 
 .contenidoContact section {
-    min-height: 0; /*Para anular el min-height del section general*/
+    min-height: 0;
+    /*Para anular el min-height del section general*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -530,16 +500,115 @@ footer {
 /*Tipografías*/
 /*Títulos*/
 @font-face {
-  font-family: 'Quicksand';
-  src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
 }
+
 /*Resto de texto*/
 @font-face {
-  font-family: 'Lato';
-  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-family: 'Lato';
+    src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Lato cursiva';
-  src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype");
+    font-family: 'Lato cursiva';
+    src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype");
+}
+
+
+/***********************************************************/
+/*Contenido responsive*/
+/* Para móviles apaisados y tablets */
+@media screen and (min-width: 576px) and (max-width:992px) {
+
+    /***********************************************************/
+    /*Common*/
+    header {
+        position: relative;
+        padding-bottom: 0.2em;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+
+    .drawer {
+        display: block;
+        color: whitesmoke;
+        font-size: 2em;
+    }
+
+    #ckbox:checked~.navbar {
+        left: 0;
+    }
+
+    header nav .navbar {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background-color: var(--teal);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        z-index: 1000;
+    }
+
+    header nav .navbar li {
+        padding: 1em 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+        border-bottom: solid .1rem whitesmoke;
+    }
+
+    header nav .navbar li a:hover {
+        color: var(--teal);
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    /***********************************************************/
+    /*Inicio*/
+
+    .contenidoHome {
+        width: 100vw;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenidoHome .imgBox {
+        margin: 3em;
+    }
+
+    /***********************************************************/
+    /*CV*/
+
+    .contenidoCV {
+        padding: 1.5em;
+    }
+
+    /***********************************************************/
+    /*Proyectos*/
+
+    .contenidoProjects {
+        padding: 1em;
+    }
+
+    /***********************************************************/
+    /*Contacto*/
+
+    .contenidoContact {
+        padding: 1em;
+    }
+
+
 }
