@@ -52,13 +52,25 @@
     "title": "Contáctame",
     "description": "¿Quieres trabajar conmigo o tienes una pregunta? Envíame un mensaje.",
     "form": {
+      "personal": "Datos personales",
       "name": "Nombre (*):",
       "surname": "Apellidos (*):",
       "company": "Empresa:",
       "email": "Correo electrónico (*):",
       "phone": "Teléfono (*):",
+      "contact": "Preferencia de modo de contacto",
+      "phoneC": "Teléfono",
+      "emailC": "Correo electrónico",
+      "acquaintance": "Cómo me has conocido",
+      "acquaintanceS": "Selecciona por qué medio me has conocido:",
+      "social": "Redes sociales",
+      "friends":"Amigos/as",
+      "google": "Google",
+      "other": "Otro", 
       "message": "Mensaje",
-      "submit": "Enviar"
+      "messagePlaceholder": "Escribe tu mensaje aquí",
+      "submit": "Enviar",
+      "reset": "Borrar"
     },
     "success": "¡Gracias! Te responderé pronto."
   },

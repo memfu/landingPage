@@ -47,7 +47,7 @@
                 <h3 data-i18n="contact.description"></h3>
                 <form action="mailto:me.martinfuentes@gmail.com" method="post">
                     <fieldset>
-                        <legend>Datos personales:</legend>
+                        <legend data-i18n="contact.form.personal"></legend>
                         <label data-i18n="contact.form.name" for="name"></label>
                         <input type="text" name="name" id="name" required>
                         <label data-i18n="contact.form.surname" for="surname"></label>
@@ -55,26 +55,41 @@
                         <label data-i18n="contact.form.company" for="company"></label>
                         <input type="text" name="company" id="company">
                         <label data-i18n="contact.form.email" for="email"></label>
-                        <input type="text" name="email" id="email" required>
-                        <label data-i18n="contact.form.phone"for="telf"></label>
-                        <input type="tel" name="telf" id="telf" required>
+                        <input type="email" name="email" id="email" required>
+                        <label data-i18n="contact.form.phone" for="phone"></label>
+                        <!-- El input de Teléfono es de tipo text para en caso de que sea
+                            un nr. internacional (empezando por + o por 0) no haya problemas-->
+                        <input type="text" name="phone" id="phone" required>
                     </fieldset>
                     <fieldset>
-                        <legend>Preferencia de modo de contacto:</legend>
-                        <div><input type="radio" name="modo-contacto" value="telf">Teléfono</div>
-                        <div><input type="radio" name="modo-contacto" value="email">Email</div>
+                        <legend data-i18n="contact.form.contact"></legend>
+                        <div>
+                            <input type="radio" name="modo-contacto" value="emailC">
+                            <label data-i18n="contact.form.emailC" for="emailC"></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="modo-contacto" value="phoneC">
+                            <label data-i18n="contact.form.phoneC" for="phoneC"></label>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Cómo me has conocido:</legend>
-                        <label class="inline-block" for="conocido">Selecciona por qué medio nos has conocido:</label>
-                        <select name="conocido" id="conocido">
-                            <option value="redes">Redes sociales</option>
-                            <option value="anuncios">Anuncios</option>
-                            <option value="google">Google</option>
-                            <option value="trabajador">Trabajador</option>
-                            <option value="otro">Otro</option>
+                        <legend data-i18n="contact.form.acquaintance"></legend>
+                        <label data-i18n="contact.form.acquaintanceS" class="inline-block" for="acquaintance"></label>
+                        <select name="acquaintance" id="acquaintance">
+                            <option data-i18n="contact.form.social" value="social"></option>
+                            <option data-i18n="contact.form.friends" value="friends"></option>
+                            <option data-i18n="contact.form.google" value="google"></option>
+                            <option data-i18n="contact.form.other" value="other"></option>
                         </select>
                     </fieldset>
+                    <fieldset>
+                        <legend data-i18n="contact.form.message"></legend>
+                        <textarea data-i18n="contact.form.messagePlaceholder" name="message" id="message"></textarea>
+                    </fieldset>
+                    <div class="buttons-form">
+                        <input class="inline-block" type="submit" data-i18n="contact.form.submit">
+                        <input class="inline-block" type="reset" data-i18n="contact.form.reset">
+                    </div>
                 </form>
             </section>
     </section>

@@ -49,16 +49,29 @@
     ]
   },
   "contact": {
-    "title": "Contact Me",
-    "description": "Want to work with me or have a question? Send me a message.",
-    "form": {
-      "name": "Name",
-      "surname": "Surname",
-      "company": "Company",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send"
-    },
+  "title": "Contact Me",
+  "description": "Would you like to work with me or have a question? Send me a message.",
+  "form": {
+    "personal": "Personal Information",
+    "name": "First Name (*):",
+    "surname": "Last Name (*):",
+    "company": "Company:",
+    "email": "Email (*):",
+    "phone": "Phone (*):",
+    "contact": "Preferred Contact Method",
+    "phoneC": "Phone",
+    "emailC": "Email",
+    "acquaintance": "How did you find me?",
+    "acquaintanceS": "Select how you found me:",
+    "social": "Social Media",
+    "friends": "Friends",
+    "google": "Google",
+    "other": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Write your message here",
+    "submit": "Send",
+    "reset": "Clear"
+  },
     "success": "Thank you! I'll get back to you soon."
   },
   "cv": {

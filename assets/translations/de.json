@@ -49,16 +49,29 @@
     ]
   },
   "contact": {
-    "title": "Kontaktiere mich",
-    "description": "Möchtest du mit mir arbeiten oder hast du eine Frage? Schreib mir eine Nachricht.",
-    "form": {
-      "name": "Vorname",
-      "surname": "Nachname",
-      "company": "Firma",
-      "email": "E-Mail",
-      "message": "Nachricht",
-      "submit": "Senden"
-    },
+  "title": "Kontaktiere mich",
+  "description": "Möchtest du mit mir zusammenarbeiten oder hast du eine Frage? Sende mir eine Nachricht.",
+  "form": {
+    "personal": "Persönliche Daten",
+    "name": "Vorname (*):",
+    "surname": "Nachname (*):",
+    "company": "Firma:",
+    "email": "E-Mail-Adresse (*):",
+    "phone": "Telefonnummer (*):",
+    "contact": "Bevorzugte Kontaktmethode",
+    "phoneC": "Telefon",
+    "emailC": "E-Mail",
+    "acquaintance": "Wie hast du mich gefunden?",
+    "acquaintanceS": "Wähle aus, wie du mich gefunden hast:",
+    "social": "Soziale Netzwerke",
+    "friends": "Freunde",
+    "google": "Google",
+    "other": "Andere",
+    "message": "Nachricht",
+    "messagePlaceholder": "Schreibe hier deine Nachricht",
+    "submit": "Senden",
+    "reset": "Zurücksetzen"
+  },
     "success": "Danke! Ich melde mich bald bei dir."
   },
   "cv": {
